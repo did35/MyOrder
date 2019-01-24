@@ -12,6 +12,7 @@
 		636FE68121F9C9700006683F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636FE67F21F9C9700006683F /* Main.storyboard */; };
 		636FE68321F9C9710006683F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636FE68221F9C9710006683F /* Assets.xcassets */; };
 		636FE68621F9C9710006683F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636FE68421F9C9710006683F /* LaunchScreen.storyboard */; };
+		636FE69121F9CDB30006683F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636FE69021F9CDB30006683F /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		636FE68221F9C9710006683F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636FE68521F9C9710006683F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636FE68721F9C9710006683F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636FE69021F9CDB30006683F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		636FE67A21F9C9700006683F /* PickerProject */ = {
 			isa = PBXGroup;
 			children = (
+				636FE68E21F9C9850006683F /* Model */,
+				636FE68F21F9C98B0006683F /* View */,
+				636FE68D21F9C97C0006683F /* Controller */,
 				636FE67B21F9C9700006683F /* AppDelegate.swift */,
-				636FE67D21F9C9700006683F /* ViewController.swift */,
-				636FE67F21F9C9700006683F /* Main.storyboard */,
 				636FE68221F9C9710006683F /* Assets.xcassets */,
-				636FE68421F9C9710006683F /* LaunchScreen.storyboard */,
 				636FE68721F9C9710006683F /* Info.plist */,
 			);
 			path = PickerProject;
+			sourceTree = "<group>";
+		};
+		636FE68D21F9C97C0006683F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				636FE67D21F9C9700006683F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		636FE68E21F9C9850006683F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				636FE69021F9CDB30006683F /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		636FE68F21F9C98B0006683F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636FE67F21F9C9700006683F /* Main.storyboard */,
+				636FE68421F9C9710006683F /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636FE67E21F9C9700006683F /* ViewController.swift in Sources */,
+				636FE69121F9CDB30006683F /* Data.swift in Sources */,
 				636FE67C21F9C9700006683F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ES7AM762;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PickerProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ES7AM762;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PickerProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
