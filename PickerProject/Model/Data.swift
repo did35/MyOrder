@@ -9,13 +9,13 @@
 import Foundation
 
 struct Data {
-    let data_1 = ["apple", "banana", "lemon"]
-    let data_2 = ["juice", "soda", "wine", "water", "coffee"]
-    let data_3 = ["salad", "pizza", "pennoni", "beef", "chicken", "fish"]
+    let fruits = ["apple", "banana", "lemon"]
+    let drinks = ["juice", "soda", "wine", "water", "coffee"]
+    let foods = ["salad", "pizza", "pennoni", "beef", "chicken", "fish"]
     
     func chosenFruit(item: String) -> String {
-        for x in data_1 {
-            if x == item {
+        for fruit in fruits {
+            if fruit == item {
                 return item
             }
         }
@@ -23,8 +23,8 @@ struct Data {
     }
     
     func chosenDrink(item: String) -> String {
-        for x in data_2 {
-            if x == item {
+        for drink in drinks {
+            if drink == item {
                 return item
             }
         }
@@ -32,8 +32,8 @@ struct Data {
     }
     
     func chosenDish(item: String) -> String {
-        for x in data_3 {
-            if x == item {
+        for food in foods {
+            if food == item {
                 return item
             }
         }

@@ -20,9 +20,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var foodArray = [String]()
     
     // MARK: - Instances
-    let fruit = Data().data_1
-    let drink = Data().data_2
-    let food = Data().data_3
+    let fruit = Data().fruits
+    let drink = Data().drinks
+    let food = Data().foods
     
     // MARK: - ViewDidLoad method
     override func viewDidLoad() {
